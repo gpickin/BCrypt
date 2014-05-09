@@ -24,6 +24,7 @@ component displayname="BCrypt" hint="hashes and passwords and checks password ha
 	private void function loadBCrypt(){
 		tryToLoadBCryptFromClassPath();
 		
+		//Uncomment if you want to load with JavaLoader, after setup.
 		//if(NOT isBCryptLoaded()){
 		//	tryToLoadBCryptWithJavaLoader();
 		//}
@@ -50,7 +51,8 @@ component displayname="BCrypt" hint="hashes and passwords and checks password ha
 	}
 
 	private any function getJavaLoader(){
-		return getPlugin("JavaLoader");
+		//Replace ColdBox Plugin code with your order JavaLoader Code
+		//return getPlugin("JavaLoader");
 	}
 	
 	private void function setWorkFactor(required numeric workFactor){
